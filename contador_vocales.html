@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 4: Contador de Vocales</title>
+</head>
+<body>
+  <h1>Ejercicio 4: Contador de Vocales</h1>
+  <label for="frase-input">Ingrese una frase:</label>
+  <input type="text" id="frase-input">
+  <br>
+  <button onclick="contarVocales()">Contar Vocales</button>
+  <p id="resultado"></p>
+
+  <script>
+    function contarVocales() {
+      // Obtener el valor ingresado en el campo de texto
+      var frase = document.getElementById("frase-input").value;
+
+      // Obtener el elemento donde se mostrará el resultado
+      var resultado = document.getElementById("resultado");
+
+      // Crear un objeto contador con propiedades para cada vocal y valor inicial 0
+      var contador = {
+        a: 0,
+        e: 0,
+        i: 0,
+        o: 0,
+        u: 0
+      };
+
+      // Convertir la frase a minúsculas para facilitar la comparación
+      frase = frase.toLowerCase();
+
+      // Recorrer cada letra de la frase
+      for (var i = 0; i < frase.length; i++) {
+        var letra = frase[i];
+        
+        // Verificar si la letra es una vocal y, si lo es, incrementar el contador correspondiente
+        if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+          contador[letra]++;
+        }
+      }
+
+      // Mostrar el encabezado del resultado
+      resultado.textContent = "Cantidad de vocales encontradas:";
+
+      // Recorrer las propiedades del objeto contador
+      for (var vocal in contador) {
+        // Mostrar cada vocal junto con la cantidad de veces que aparece
+        resultado.textContent += " " + vocal + ": " + contador[vocal] + ",";
+      }
+    }
+  </script>
+</body>
+</html>

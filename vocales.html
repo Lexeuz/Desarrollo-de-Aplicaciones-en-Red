@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 3: Vocales</title>
+</head>
+
+<body>
+    <h1>Ejercicio 3: Vocales</h1>
+    <label for="frase-input">Ingrese una frase:</label>
+    <input type="text" id="frase-input">
+    <br>
+    <button onclick="mostrarVocales()">Mostrar Vocales</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarVocales() {
+            // Obtener el valor ingresado en el campo de texto
+            var frase = document.getElementById("frase-input").value;
+
+            // Obtener el elemento donde se mostrará el resultado
+            var resultado = document.getElementById("resultado");
+
+            // Variable para almacenar las vocales encontradas
+            var vocales = "";
+
+            // Convertir la frase a minúsculas
+            frase = frase.toLowerCase();
+
+            // Iterar sobre cada letra de la frase
+            for (var i = 0; i < frase.length; i++) {
+                var letra = frase[i];
+                // Verificar si la letra es una vocal (a, e, i, o, u)
+                if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+                    // Agregar la vocal a la cadena de vocales
+                    vocales += letra + " ";
+                }
+            }
+
+            // Verificar si se encontraron vocales en la frase
+            if (vocales === "") {
+                resultado.textContent = "No se encontraron vocales en la frase.";
+            } else {
+                resultado.textContent = "Vocales encontradas: " + vocales;
+            }
+        }
+    </script>
+</body>
+
+</html>

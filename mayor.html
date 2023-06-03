@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2: Mayor</title>
+</head>
+
+<body>
+    <h1>Ejercicio 2: Mayor</h1>
+    <label for="num1-input">Ingrese el primer número:</label>
+    <input type="number" id="num1-input">
+    <br>
+    <label for="num2-input">Ingrese el segundo número:</label>
+    <input type="number" id="num2-input">
+    <br>
+    <button onclick="encontrarMayor()">Encontrar Mayor</button>
+    <p id="resultado"></p>
+
+    <script>
+        function encontrarMayor() {
+            // Obtener el valor ingresado en el primer campo de entrada
+            var num1 = parseFloat(document.getElementById("num1-input").value);
+
+            // Obtener el valor ingresado en el segundo campo de entrada
+            var num2 = parseFloat(document.getElementById("num2-input").value);
+
+            // Obtener el elemento donde se mostrará el resultado
+            var resultado = document.getElementById("resultado");
+
+            // Verificar si los valores ingresados son números válidos
+            if (isNaN(num1) || isNaN(num2)) {
+                resultado.textContent = "Ingrese números válidos";
+            } else if (num1 > num2) {
+                resultado.textContent = "El primer número es mayor: " + num1;
+            } else if (num2 > num1) {
+                resultado.textContent = "El segundo número es mayor: " + num2;
+            } else {
+                resultado.textContent = "Los números son iguales.";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejercicio 1: Palíndromo</title>
+</head>
+
+<body>
+  <h1>Ejercicio 1: Palíndromo</h1>
+  <label for="palabra-input">Ingrese una palabra:</label>
+  <input type="text" id="palabra-input">
+  <button onclick="verificarPalindromo()">Verificar</button>
+  <p id="resultado"></p>
+
+  <script>
+    function esPalindromo(cadena) {
+      // Convertir la cadena a minúsculas y eliminar los espacios en blanco
+      cadena = cadena.toLowerCase().replace(/\s/g, '');
+
+      // Obtener la cadena invertida
+      var cadenaInvertida = cadena.split('').reverse().join('');
+
+      // Verificar si la cadena original es igual a la cadena invertida
+      if (cadena === cadenaInvertida) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function verificarPalindromo() {
+      // Obtener el valor ingresado en el campo de texto
+      var palabra = document.getElementById("palabra-input").value;
+
+      // Obtener el elemento donde se mostrará el resultado
+      var resultado = document.getElementById("resultado");
+
+      // Verificar si la palabra es un palíndromo utilizando la función esPalindromo()
+      if (esPalindromo(palabra)) {
+        resultado.textContent = "La palabra es un palíndromo";
+      } else {
+        resultado.textContent = "La palabra no es un palíndromo";
+      }
+    }
+  </script>
+</body>
+
+</html>

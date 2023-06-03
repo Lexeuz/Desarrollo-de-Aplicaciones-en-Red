@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-image: url(img/java-img.jpg); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1, h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  
+  /* Contenedor a la izquierda. */
+  
+  .container-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 320px;
+    height: 100vh;
+    width: 200px;
+    background-color: #000000; /* Color de fondo */
+    color: white;
+    border: 5px solid #05a6ce; /* Color del borde */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  hr {
+    border-color: rgb(0, 190, 253); /* Color del borde horizontal */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .container-menu {
+    margin-top: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Color del enlace */
+  }
+  
+  .container-des {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .container-des h3, .container-des p {
+    margin: 0;
+  }
+  
+  
+  /* Container Content */
+  .container-content {
+    margin-right: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #000000; /* Borde de las celdas de la tabla */
+    padding: 8px; /* Espaciado interno de las celdas de la tabla */
+  }
+  
+  th {
+    background-color: #bff1d3; /* Color de fondo del encabezado de la tabla */
+    font-weight: bold; /* Peso de la fuente del encabezado de la tabla */
+  }
+  
+  
+  /* Formulario */
+  form {
+    width: 400px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+  }
+  
+  label {
+    display: block; /* Mostrar etiquetas en una nueva línea */
+    margin-bottom: 10px; /* Espaciado inferior de las etiquetas */
+    font-weight: bold; /* Peso de la fuente de las etiquetas */
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%; /* Ancho completo para los campos de texto y select */
+    padding: 8px; /* Espaciado interno de los campos de texto y select */
+    border: 1px solid #ccc; /* Borde de los campos de texto y select */
+    border-radius: 4px; /* Radio de borde de los campos de texto y select */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
+    margin-bottom: 20px; /* Espaciado inferior de los campos de texto y select */
+  }
+  
+  select {
+    height: 34px; /* Altura del select */
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo del botón de envío */
+    color: white; /* Color de texto del botón de envío */
+    padding: 10px 20px; /* Espaciado interno del botón de envío */
+    border: none; /* Borde del botón de envío */
+    border-radius: 4px; /* Radio de borde del botón de envío */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón de envío */
+    font-size: 16px; /* Tamaño de fuente del botón de envío */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo al pasar sobre el botón de envío */
+  }
+  
+  
+  /* Mi informacion */
+  .my-info {
+    max-width: 800px; /* Ancho máximo del contenedor de información */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  }
+  
+  h3 {
+    font-size: 24px; /* Tamaño de fuente para títulos h3 */
+    margin-top: 20px; /* Espaciado superior para títulos h3 */
+  }
+  
+  h4 {
+    font-size: 18px; /* Tamaño de fuente para títulos h4 */
+    margin-top: 20px; /* Espaciado superior para títulos h4 */
+  }
+  
+  p {
+    margin-top: 10px; /* Espaciado superior para párrafos */
+  }
+  
+  a {
+    display: block; /* Mostrar en bloque */
+    margin-top: 10px; /* Espaciado superior para enlaces */
+    text-decoration: none; /* Quitar decoración de texto para enlaces */
+  }
+  
+  .mi-foto {
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    vertical-align: middle; /* Alinear verticalmente */
+    margin-right: 10px; /* Espaciado derecho para la imagen */
+  }
+  

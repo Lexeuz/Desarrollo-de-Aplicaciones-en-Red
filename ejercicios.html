@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ejercicios.css">
+    <link rel="icon" href="icons/project-management.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>UNIR</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h1>Laboratorio: JavaScript y AJAX</h1>
+    </div>
+
+    <div class="container-left">
+        <div class="logo-container">
+            <img src="icons/artificial-intelligence.png" alt="artificial-intelligence" class="logo">
+            <!-- Logo de Inteligencia Artificial -->
+        </div>
+        <div class="container-menu">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace al inicio -->
+                <li><a href="formulario.html">Formulario</a></li> <!-- Enlace al formulario -->
+                <li><a href="sobre_mi.html">Sobre mí</a></li> <!-- Enlace a la sección "Sobre mí" -->
+                <li><a href="#">Ejercicos</a></li> <!-- Enlace a la sección "Ejercicios" -->
+            </ul>
+        </div>
+        <div class="container-des">
+            <hr><br><br>
+            <img src="img/HTML.jpg" alt="profile-pic" class="mi-foto"> <!-- Foto de perfil -->
+            <br><br>
+            <h4>Saludos!</h4>
+            <br>
+            <p>Espero que el trabajo sea de su agrado.</p> <!-- Nombre -->
+            <br>
+            <h4>Le deseo un excelente dia!</h4>
+        </div>
+    </div>
+
+
+    <div class="container-content">
+        <div class="my-info">
+            <h3>Ejericicios JavaScript:</h3>
+            <ul>
+                <li><a href="palindromo.html" target="_blank">Ejercicio 1: Palíndromo</a></li>
+                <li><a href="mayor.html" target="_blank">Ejercicio 2: Mayor</a></li>
+                <li><a href="vocales.html" target="_blank">Ejercicio 3: Vocales</a></li>
+                <li><a href="contador_vocales.html" target="_blank">Ejercicio 4: Contador de Vocales</a></li>
+            </ul>
+            <h3>Ejercicio AJAX</h3>
+            <br>
+            <label for="url">URL:</label>
+            <input type="text" id="url" value="https://lexeuz.github.io/Desarrollo-de-Aplicaciones-en-Red/">
+            <button onclick="mostrarContenidos()">Mostrar Contenidos</button>
+            <h2>Estados de la petición:</h2>
+            <div id="estado"></div>
+            <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+            <pre id="cabeceras"></pre>
+            <h2>Código de estado:</h2>
+            <div id="codigoEstado"></div>
+            <h2>Contenidos del archivo:</h2>
+            <pre id="contenidos"></pre>
+        </div>
+    </div>
+
+</body>
+
+</html>
